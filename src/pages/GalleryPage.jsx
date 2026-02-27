@@ -9,11 +9,7 @@ function GalleryPage() {
 
   return (
     <>
-      <PageHero
-        title="Gallery"
-        image="https://rahmatadvocate.com/wp-content/uploads/2023/01/WhatsApp-Image-2023-01-31-at-13.26.03-2.jpeg"
-      />
-
+      <PageHero title="Gallery"/>
       <section className="py-18 md:py-24 bg-white">
         <div className="container-shell">
           <AnimatedSection>

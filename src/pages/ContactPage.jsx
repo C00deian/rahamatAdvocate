@@ -17,9 +17,7 @@ function ContactPage() {
     <>
       <PageHero
         title="Contact Us"
-        image="https://rahmatadvocate.com/wp-content/uploads/2023/01/WhatsApp-Image-2023-01-31-at-13.26.03-1.jpeg"
       />
-
       <section className="py-18 md:py-24 bg-white">
         <div className="container-shell">
           <AnimatedSection>
@@ -41,8 +39,8 @@ function ContactPage() {
 
               return (
                 <AnimatedSection key={item.title} delay={index * 110}>
-                  <article className="border border-[var(--line)] p-6 bg-[#fdfaf7] text-center">
-                    <Icon size={18} className="mx-auto text-[var(--primary)]" />
+                  <article className="border border-(--line) p-6 bg-[#fdfaf7] text-center">
+                    <Icon size={18} className="mx-auto text-(--primary)" />
                     <h3 className="font-title text-xl mt-3">{item.title}</h3>
                     <p className="text-[#575757] mt-2">{item.value}</p>
                   </article>
@@ -51,11 +49,12 @@ function ContactPage() {
             })}
           </div>
 
+
           <div className="grid lg:grid-cols-[1fr_1.05fr] gap-8 mt-12">
             <AnimatedSection>
               <iframe
                 title="office-map"
-                className="w-full h-[420px] border-0"
+                className="w-full h-105 border-0"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 src="https://maps.google.com/maps?q=Mehdipatnam%20Hyderabad&t=&z=13&ie=UTF8&iwloc=&output=embed"
@@ -63,7 +62,7 @@ function ContactPage() {
             </AnimatedSection>
 
             <AnimatedSection delay={120}>
-              <form onSubmit={handleSubmit} className="border border-[var(--line)] bg-[#fcf8f4] p-6 md:p-8 space-y-4">
+              <form onSubmit={handleSubmit} className="border border-(--line) bg-[#fcf8f4] p-6 md:p-8 space-y-4">
                 <h3 className="font-title text-2xl">Send a Message</h3>
                 <input
                   value={form.name}

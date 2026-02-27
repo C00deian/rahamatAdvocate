@@ -23,10 +23,7 @@ function BlogPage() {
 
   return (
     <>
-      <PageHero
-        title="Our Blog"
-        image="https://rahmatadvocate.com/wp-content/uploads/2023/01/Picture2.jpg"
-      />
+      <PageHero title="Our Blog"/>
 
       <section className="py-18 md:py-24 bg-white">
         <div className="container-shell">

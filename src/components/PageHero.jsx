@@ -1,15 +1,13 @@
-function PageHero({ title, image }) {
+function PageHero({ title }) {
   return (
-    <section
-      className="relative h-[42vh] min-h-[260px] overflow-hidden"
-      style={{
-        backgroundImage: `linear-gradient(rgba(0,0,0,.58), rgba(0,0,0,.58)), url(${image})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}
-    >
-      <div className="container-shell h-full flex items-center justify-center">
-        <h1 className="font-title text-center text-white text-4xl md:text-5xl font-bold tracking-[0.02em]">{title}</h1>
+    <section className="bg-[#ececec] border-y border-[#e1e1e1]">
+      <div className="container-shell h-47.5 md:h-52.5 flex items-center pl-4 md:pl-10">
+        <div className="inline-flex items-center gap-3 md:gap-5">
+          <span className="h-12 w-0.5 bg-(--primary)" aria-hidden="true" />
+          <h1 className="font-title uppercase text-[#0f1720] text-[1.05rem] md:text-[2.1rem] font-semibold tracking-[0.01em] leading-none">
+            {title}
+          </h1>
+        </div>
       </div>
     </section>
   )

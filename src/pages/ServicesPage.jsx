@@ -40,7 +40,7 @@ function ServicesPage() {
   return (
     <>
       <PageHero
-        title="Services"
+        title="Service"
         image="https://rahmatadvocate.com/wp-content/uploads/2023/01/Rahmat.com_46.jpg"
       />
 

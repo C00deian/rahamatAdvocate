@@ -15,7 +15,6 @@ function HomePage() {
   return (
     <>
       <HeroSlider slides={heroSlides} />
-
       <section className="py-18 md:py-24 bg-white">
         <div className="container-shell grid lg:grid-cols-2 gap-12 items-center">
           <AnimatedSection>
