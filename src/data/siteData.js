@@ -1,3 +1,7 @@
+import heroSlideOne from '../assets/home/2.jpg'
+import heroSlideTwo from '../assets/home/3.jpg'
+import heroSlideThree from '../assets/home/4.jpg'
+
 export const brand = {
     name: 'RAHMAT ADVOCATE',
     tagline: 'JUSTICE FOR ALL',
@@ -22,20 +26,20 @@ export const socials = [
 
 export const heroSlides = [
     {
-        title: 'Mr. RAHMAT Advocates & Associates',
+        title: 'MR. RAHMAT ADVOCATES  & ASSOCIATES',
         caption:
             'Law firms may be comprised of a single attorney, of several lawyers, or of many attorneys, organized as partners.',
-        image: 'https://rahmatadvocate.com/wp-content/uploads/2023/01/Rahmat.com_45.jpg',
+        image: heroSlideOne,
         align: 'center',
-        contentClass: 'mx-auto max-w-[760px]',
+        contentClass: 'mx-auto max-w-[640px]',
         actionsClass: 'justify-center',
         backgroundPosition: 'center',
     },
     {
-        title: 'Business Legal Practice',
+        title: 'BUSINESS LEGAL PRACTICE',
         caption:
             'Formation and incorporation of a business, contracts, employment law, intellectual property, mergers and acquisitions, and tax law.',
-        image: 'https://rahmatadvocate.com/wp-content/uploads/2023/01/Rahmat.com_46.jpg',
+        image: heroSlideTwo,
         align: 'left',
         containerClass: 'justify-start text-left',
         contentClass: 'mr-auto max-w-[640px] lg:pl-6',
@@ -43,10 +47,10 @@ export const heroSlides = [
         backgroundPosition: 'center',
     },
     {
-        title: 'Personal Free Consulting',
+        title: 'PERSONAL FREE CONSULTING',
         caption:
-            'Guidance tailored to local and global legal concerns, with practical support and strategic representation.',
-        image: 'https://rahmatadvocate.com/wp-content/uploads/2023/01/WhatsApp-Image-2023-01-31-at-13.26.03-2.jpeg',
+            'Personal free consulting is usually offered voluntarily and without expectation of compensation, and may be done informally among friends, family, or community members, or more formally through an organization or service.',
+        image: heroSlideThree,
         align: 'right',
         containerClass: 'justify-end text-right',
         contentClass: 'ml-auto max-w-[650px] lg:pr-6',

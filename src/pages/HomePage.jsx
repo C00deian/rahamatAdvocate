@@ -21,6 +21,7 @@ const iconMapping = [FaStar, FaUserCircle, FaTelegram]
 
 
 // image section
+import rahmat_45 from '../assets/home/Rahmat.com_45.jpg'
 
 
 function HomePage() {
@@ -51,7 +52,7 @@ function HomePage() {
 
                     <AnimatedSection className="relative lg:pl-9" delay={140}>
                         <img
-                            src="https://rahmatadvocate.com/wp-content/uploads/2023/01/Rahmat.com_45.jpg"
+                            src={rahmat_45}
                             alt="Advocate Rahmat"
                             className="w-full h-[430px] md:h-135 object-cover shadow-[0_0_40px_rgba(0,0,0,.25)]"
                         />

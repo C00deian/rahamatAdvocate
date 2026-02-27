@@ -44,7 +44,7 @@ function HeroSlider({ slides }) {
   }
 
   return (
-    <section className="relative h-[86vh] min-h-[520px] overflow-hidden bg-black">
+    <section className="relative h-screen min-h-[520px] overflow-hidden bg-black">
       {slides.map((slide, index) => {
         const active = index === current
         const fallbackLayout = defaultLayoutByAlign[slide.align] || defaultLayoutByAlign.center
