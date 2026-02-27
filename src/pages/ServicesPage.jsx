@@ -1,10 +1,11 @@
 import {
     FaBalanceScale, FaBuilding, FaClock, FaFemale, FaFingerprint, FaGlobeAsia, FaLongArrowAltRight,
-    FaPhone, FaPhoneAlt, FaUniversity
+    FaPhoneAlt, FaUniversity
 } from 'react-icons/fa'
 import AnimatedSection from '../components/AnimatedSection'
 import PageHero from '../components/PageHero'
 import SectionHeading from '../components/SectionHeading'
+import image14 from '../assets/services/14.jpg';
 
 const services = [
     {
@@ -86,7 +87,7 @@ function ServicesPage() {
                 </div>
             </section>
 
-            <section className="py-16 md:py-22 bg-white">
+            <section className="py-16 md:py-24 bg-white">
                 <div className="container-shell">
                     <AnimatedSection>
                         <SectionHeading
@@ -105,7 +106,7 @@ function ServicesPage() {
                                     <article
                                         className="h-full border border-[#e1d8d0] bg-[#fcfaf7] p-7 md:p-8 hover:shadow-[0_12px_24px_rgba(0,0,0,.09)] transition-shadow">
                                         <div
-                                            className="size-11 rounded-full bg-(--primary)/12 text-(--primary) inline-flex items-center justify-center">
+                                            className="size-11 rounded-full bg-[var(--primary)]/12 text-[var(--primary)] inline-flex items-center justify-center">
                                             <Icon size={19}/>
                                         </div>
                                         <h3 className="font-title mt-4 text-[1.4rem] leading-8">{service.title}</h3>
@@ -122,7 +123,7 @@ function ServicesPage() {
                 <div className="container-shell grid grid-cols-2 md:grid-cols-4 gap-4">
                     {stripOneImages.map((image, index) => (
                         <AnimatedSection key={image} delay={index * 70}>
-                            <img src={image} alt="Service strip" className="w-full h-37.5 md:h-52.5 object-cover"/>
+                            <img src={image} alt="Service strip" className="w-full h-[150px] md:h-[210px] object-cover"/>
                         </AnimatedSection>
                     ))}
                 </div>
@@ -132,14 +133,15 @@ function ServicesPage() {
                 <div className="container-shell grid grid-cols-2 md:grid-cols-4 gap-4">
                     {stripTwoImages.map((image, index) => (
                         <AnimatedSection key={image} delay={index * 70}>
-                            <img src={image} alt="Service strip" className="w-full h-37.5 md:h-52.5 object-cover"/>
+                            <img src={image} alt="Service strip" className="w-full h-[150px] md:h-[210px] object-cover"/>
                         </AnimatedSection>
                     ))}
                 </div>
             </section>
 
             <section
-                className="py-16 md:py-20"
+
+                className="py-16 md:py-20 m-8"
                 style={{
                     backgroundImage:
                         'linear-gradient(rgba(10,10,10,.62), rgba(10,10,10,.62)), url(https://rahmatadvocate.com/wp-content/uploads/2023/01/1.jpg)',
@@ -147,13 +149,13 @@ function ServicesPage() {
                     backgroundPosition: 'center',
                 }}
             >
-                <div className="container-shell md:w-[92%]">
-                    <div className="ml-auto max-w-xl /92 text-white p-8 md:p-10">
+                <div className="container-shell md:w-[98%] border-white">
+                    <div className="ml-auto max-w-xl text-white p-8 md:p-10">
                         <h2 className="font-title text-2xl md:text-3xl font-semibold leading-none">Free Feel To Contact
                             us</h2>
                         <a
                             href="tel:+919642066661"
-                            className="inline-flex mt-6 items-center gap-2 border-white/65 px-6 py-3 font-title bg-(--primary) hover:bg-white/10 transition-colors"
+                            className="inline-flex mt-6 items-center gap-2 px-6 py-3 font-title bg-[var(--primary)] hover:bg-white/10 transition-colors"
                         >
                             <FaPhoneAlt/>
                             CONTACT US
@@ -171,7 +173,7 @@ function ServicesPage() {
                                 <li key={item.day}
                                     className="flex items-center justify-between border-b border-white/15 pb-2.5">
                   <span className="inline-flex items-center gap-2.5 font-title text-[1.02rem]">
-                    <FaClock className="text-(--primary)" size={12}/>
+                    <FaClock className="text-[var(--primary)]" size={12}/>
                       {item.day}
                   </span>
                                     <span className="text-white/85 text-[0.96rem]">{item.hours}</span>
@@ -184,7 +186,7 @@ function ServicesPage() {
                         <img
                             src="https://rahmatadvocate.com/wp-content/uploads/2019/11/13-1024x681.jpg"
                             alt="Office"
-                            className="w-full h-80 md:h-full object-cover"
+                            className="w-full h-[320px] md:h-full object-cover"
                         />
                     </AnimatedSection>
                 </div>
@@ -195,7 +197,7 @@ function ServicesPage() {
                     <h3 className="font-title text-2xl md:text-3xl">We&apos;re Hiring. Join Us Now</h3>
                     <button
                         type="button"
-                        className="inline-flex items-center gap-2 bg-(--primary) text-white px-6 py-3 font-title hover:bg-(--primary-dark) transition-colors"
+                        className="inline-flex items-center gap-2 bg-[var(--primary)] text-white px-6 py-3 font-title hover:bg-[var(--primary-dark)] transition-colors"
                     >
                         <FaLongArrowAltRight/>
                         apply now

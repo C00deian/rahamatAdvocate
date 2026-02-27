@@ -26,18 +26,32 @@ export const heroSlides = [
     caption:
       'Law firms may be comprised of a single attorney, of several lawyers, or of many attorneys, organized as partners.',
     image: 'https://rahmatadvocate.com/wp-content/uploads/2023/01/Rahmat.com_45.jpg',
+    align: 'center',
+    contentClass: 'mx-auto max-w-[760px]',
+    actionsClass: 'justify-center',
+    backgroundPosition: 'center',
   },
   {
     title: 'Business Legal Practice',
     caption:
       'Formation and incorporation of a business, contracts, employment law, intellectual property, mergers and acquisitions, and tax law.',
     image: 'https://rahmatadvocate.com/wp-content/uploads/2023/01/Rahmat.com_46.jpg',
+    align: 'left',
+    containerClass: 'justify-start text-left',
+    contentClass: 'mr-auto max-w-[640px] lg:pl-6',
+    actionsClass: 'justify-start',
+    backgroundPosition: 'center',
   },
   {
     title: 'Personal Free Consulting',
     caption:
       'Guidance tailored to local and global legal concerns, with practical support and strategic representation.',
     image: 'https://rahmatadvocate.com/wp-content/uploads/2023/01/WhatsApp-Image-2023-01-31-at-13.26.03-2.jpeg',
+    align: 'right',
+    containerClass: 'justify-end text-right',
+    contentClass: 'ml-auto max-w-[650px] lg:pr-6',
+    actionsClass: 'justify-end',
+    backgroundPosition: 'center',
   },
 ]
 

@@ -29,11 +29,13 @@ function ContactPage() {
             />
           </AnimatedSection>
 
-          <div className="mt-12 grid md:grid-cols-3 gap-6">
+          <div className="mt-12 grid md:grid-cols-3 gap-4">
             {[
-              { icon: FaPhoneAlt, title: 'Call', value: '+91 96420 66661' },
-              { icon: FaEnvelope, title: 'Email', value: 'contact@rahmatadvocate.com' },
-              { icon: FaMapMarkerAlt, title: 'Office', value: 'Mehdipatnam, Hyderabad, India' },
+              { icon: FaMapMarkerAlt, title: 'Address', value: ' 1st Floor, above My Home Super Market & Country Dairy, Near\n' +
+                    'AMBA Theatre, MEHDIPATNAM, Hyderabad - 500028. Telangana State.' },
+              { icon: FaPhoneAlt, title: 'Phone', value: '+91 96420 66661' },
+              { icon: FaEnvelope, title: 'Email', value: 'advocatesrahmat@gmail.com' },
+
             ].map((item, index) => {
               const Icon = item.icon
 
@@ -63,7 +65,7 @@ function ContactPage() {
 
             <AnimatedSection delay={120}>
               <form onSubmit={handleSubmit} className="border border-(--line) bg-[#fcf8f4] p-6 md:p-8 space-y-4">
-                <h3 className="font-title text-2xl">Send a Message</h3>
+                <h3 className="font-title text-2xl">Send Us a Message</h3>
                 <input
                   value={form.name}
                   onChange={(event) => setForm((prev) => ({ ...prev, name: event.target.value }))}
