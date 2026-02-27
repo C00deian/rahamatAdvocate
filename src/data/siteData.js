@@ -69,6 +69,20 @@ export const practiceItems = [
     body: 'Criminal defense, anticipatory bail, trial strategy, white collar matters, and rights protection across proceedings.',
   },
 ]
+export const MoreAboutLayer = [
+  {
+    title: '#1 Law Firm 2019',
+    body: 'Rankings of law firms can vary based on different criteria, such as size, practice areas, geographic location, and financial performance.'
+  },
+  {
+    title: 'Professional Lawyers',
+    body: 'The members of a professional lawyers team typically have specialized knowledge and experience in specific areas of law, such as corporate law, real estate law, criminal law, and so on. They work together to provide clients with a full range of legal services, including advice and representation in legal matters, negotiations, and litigation.'
+  },
+  {
+    title: 'GLOBALLY NRI’s',
+    body: 'Globally NRI’s legal Matters in India, Local to Global NRI all Issues related to Court & Police, Family, Divorce &amp; Property Laws, Complaint at Consulate, Home Office, Embassy, Home Affairs, LOC - (Look Out Circular), NBW - Non-bailable Warrant) Arrest in Pending Cases, Anticipatory Bail, Arrested at Airports & Customs, Contesting & Challenging for Foreign Divorce & Ex-parte Divorce, Dissolution of Marriage, Spousal & Child Support and Maintenance, Child Custody & Visitation Rights, other Legal Problems, CONJUGAL RIGHTS or Divorce Notice &amp; Reply to Legal Notices.'}
+]
+
 
 export const counters = [
   { label: 'Happy Clients', value: 935, suffix: '+' },
