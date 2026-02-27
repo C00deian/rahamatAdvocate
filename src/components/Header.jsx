@@ -37,9 +37,12 @@ function Header() {
                 <li key={item.path}>
                   <NavLink
                     to={item.path}
+                    end={item.path === '/'}
                     className={({ isActive }) =>
-                      `font-title text-[0.95rem] tracking-[0.01em] transition-colors ${
-                        isActive ? 'text-[var(--primary)]' : 'text-[#121212] hover:text-[var(--primary)]'
+                      `font-title text-[0.95rem] tracking-[0.01em] pb-1 border-b-2 transition-colors ${
+                        isActive
+                          ? 'text-(--primary) border-(--primary) font-semibold'
+                          : 'text-[#121212] border-transparent hover:text-(--primary)'
                       }`
                     }
                   >
@@ -100,9 +103,14 @@ function Header() {
               <li key={item.path}>
                 <NavLink
                   to={item.path}
+                  end={item.path === '/'}
                   onClick={() => setOpen(false)}
                   className={({ isActive }) =>
-                    `font-title text-[1.03rem] ${isActive ? 'text-[var(--primary)]' : 'text-[#171717]'}`
+                    `block px-3 py-2 rounded font-title text-[1.03rem] transition-colors ${
+                      isActive
+                        ? 'bg-[var(--primary)] text-white'
+                        : 'text-[#171717] hover:bg-[var(--primary)]/10 hover:text-[var(--primary)]'
+                    }`
                   }
                 >
                   {item.label}
