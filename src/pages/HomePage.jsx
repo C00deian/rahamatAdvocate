@@ -37,7 +37,7 @@ function HomePage() {
               alt="Advocate Rahmat"
               className="w-full h-[520px] object-cover"
             />
-            <div className="absolute -bottom-5 -left-5 md:-left-8 bg-[var(--primary)] text-white p-5 max-w-[240px]">
+            <div className="absolute -bottom-5 -left-5 md:-left-8 bg-(--primary) text-white p-5 max-w-60">
               <p className="font-title text-3xl font-bold">16+</p>
               <p className="mt-1 text-sm">Years of Professional Legal Experience</p>
             </div>
