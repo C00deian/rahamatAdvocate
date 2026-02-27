@@ -5,7 +5,7 @@ import CounterCard from '../components/CounterCard'
 import PageHero from '../components/PageHero'
 import SectionHeading from '../components/SectionHeading'
 import aboutMainImage from '../assets/about/af-2048x1365.png'
-import aboutPortraitImage from '../assets/home/Rahmat.com_45.jpg'
+
 import aboutExpertiseImage from '../assets/about/10.jpg'
 import aboutOverlayImage from '../assets/about/12.jpg'
 import aboutVisionBgImage from '../assets/gallery/Rahmat.com_46.jpg'
@@ -32,11 +32,6 @@ function AboutPage() {
                 src={aboutMainImage}
                 alt="About the firm"
                 className="w-full h-[300px] md:h-[420px] object-cover"
-              />
-              <img
-                src={aboutPortraitImage}
-                alt="Advocate portrait"
-                className="absolute left-3 bottom-3 md:left-5 md:bottom-5 w-28 h-36 md:w-38 md:h-52 object-cover border-3 border-white shadow-[0_10px_20px_rgba(0,0,0,.35)]"
               />
             </AnimatedSection>
 
