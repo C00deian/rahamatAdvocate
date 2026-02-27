@@ -10,8 +10,8 @@ const icons = {
 
 function Footer() {
   return (
-    <footer className="bg-[#111] text-white mt-20">
-      <div className="container-shell py-14 grid gap-9 md:grid-cols-3">
+    <footer className="bg-[#111] text-white">
+      <div className="container-shell py-20 grid gap-10 md:grid-cols-3 mt-5">
         <section>
           <h3 className="font-title text-lg">{brand.name}</h3>
           <p className="mt-3 text-white/75 leading-7">{brand.tagline}. Professional legal support across criminal, family, corporate and NRI legal matters.</p>

@@ -4,6 +4,14 @@ import AnimatedSection from '../components/AnimatedSection'
 import CounterCard from '../components/CounterCard'
 import PageHero from '../components/PageHero'
 import SectionHeading from '../components/SectionHeading'
+import aboutMainImage from '../assets/about/af-2048x1365.png'
+import aboutPortraitImage from '../assets/home/Rahmat.com_45.jpg'
+import aboutExpertiseImage from '../assets/about/10.jpg'
+import aboutOverlayImage from '../assets/about/12.jpg'
+import aboutVisionBgImage from '../assets/gallery/Rahmat.com_46.jpg'
+import aboutGalleryOne from '../assets/about/WhatsApp-Image-2023-01-31-at-13.26.04.jpeg'
+import aboutGalleryTwo from '../assets/gallery/WhatsApp-Image-2023-01-31-at-13.26.02.jpeg'
+import aboutGalleryThree from '../assets/gallery/WhatsApp-Image-2023-01-31-at-13.26.03-1.jpeg'
 
 const progressItems = [
   { label: 'Corporate Cases', score: 90 },
@@ -21,12 +29,12 @@ function AboutPage() {
           <div className="grid lg:grid-cols-2 gap-0 border border-[#dbdbdb] overflow-hidden">
             <AnimatedSection className="relative">
               <img
-                src="https://rahmatadvocate.com/wp-content/uploads/2023/01/af-1024x683.png"
+                src={aboutMainImage}
                 alt="About the firm"
                 className="w-full h-[300px] md:h-[420px] object-cover"
               />
               <img
-                src="https://rahmatadvocate.com/wp-content/uploads/2023/01/Rahmat.com_45.jpg"
+                src={aboutPortraitImage}
                 alt="Advocate portrait"
                 className="absolute left-3 bottom-3 md:left-5 md:bottom-5 w-28 h-36 md:w-38 md:h-52 object-cover border-3 border-white shadow-[0_10px_20px_rgba(0,0,0,.35)]"
               />
@@ -75,7 +83,7 @@ function AboutPage() {
 
             <AnimatedSection delay={120}>
               <img
-                src="https://rahmatadvocate.com/wp-content/uploads/2019/11/10-1024x683.jpg"
+                src={aboutExpertiseImage}
                 alt="Our expertise"
                 className="w-full h-[300px] md:h-[420px] object-cover"
               />
@@ -91,7 +99,7 @@ function AboutPage() {
               className="h-full min-h-[260px] border border-[#dfd3c5] relative overflow-hidden"
               style={{
                 backgroundImage:
-                  'linear-gradient(rgba(17,17,17,.45), rgba(17,17,17,.45)), url(https://rahmatadvocate.com/wp-content/uploads/2023/01/1.jpg)',
+                  `linear-gradient(rgba(17,17,17,.45), rgba(17,17,17,.45)), url(${aboutOverlayImage})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
               }}
@@ -118,7 +126,7 @@ function AboutPage() {
         className="py-18 md:py-24 text-white"
         style={{
           backgroundImage:
-            'linear-gradient(rgba(15,15,15,.72), rgba(15,15,15,.72)), url(https://rahmatadvocate.com/wp-content/uploads/2023/01/Rahmat.com_46.jpg)',
+            `linear-gradient(rgba(15,15,15,.72), rgba(15,15,15,.72)), url(${aboutVisionBgImage})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -156,9 +164,9 @@ function AboutPage() {
       <section className="pb-18 md:pb-24 bg-white">
         <div className="container-shell grid md:grid-cols-3 gap-5">
           {[
-            'https://rahmatadvocate.com/wp-content/uploads/2023/01/WhatsApp-Image-2023-01-31-at-13.26.04.jpeg',
-            'https://rahmatadvocate.com/wp-content/uploads/2023/01/WhatsApp-Image-2023-01-31-at-13.26.02.jpeg',
-            'https://rahmatadvocate.com/wp-content/uploads/2023/01/WhatsApp-Image-2023-01-31-at-13.26.03.jpeg',
+            aboutGalleryOne,
+            aboutGalleryTwo,
+            aboutGalleryThree,
           ].map((image, index) => (
             <AnimatedSection key={image} delay={index * 90}>
               <img src={image} alt="About gallery" className="w-full h-[360px] md:h-[430px] object-cover" />

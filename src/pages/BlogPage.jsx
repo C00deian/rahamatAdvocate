@@ -2,19 +2,21 @@ import AnimatedSection from '../components/AnimatedSection'
 import PageHero from '../components/PageHero'
 import SectionHeading from '../components/SectionHeading'
 import { blogPosts } from '../data/siteData'
+import blogExtraOne from '../assets/home/Rahmat.com_45.jpg'
+import blogExtraTwo from '../assets/gallery/Rahmat.com_46.jpg'
 
 const extraPosts = [
   {
     title: 'How to Prepare for Your First Legal Consultation',
     date: 'February 2, 2023',
     excerpt: 'Checklist and practical preparation to make your first meeting legally productive.',
-    image: 'https://rahmatadvocate.com/wp-content/uploads/2023/01/Rahmat.com_45.jpg',
+    image: blogExtraOne,
   },
   {
     title: 'Understanding Bail and Anticipatory Bail',
     date: 'February 10, 2023',
     excerpt: 'Key procedural differences and how strategy differs based on your case stage.',
-    image: 'https://rahmatadvocate.com/wp-content/uploads/2023/01/Rahmat.com_46.jpg',
+    image: blogExtraTwo,
   },
 ]
 

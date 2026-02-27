@@ -4,6 +4,15 @@ import heroSlideThree from '../assets/home/4.jpg'
 import clientAvatarOne from '../assets/home/avtar3.png'
 import clientAvatarTwo from '../assets/home/ava1.jpg'
 import clientAvatarThree from '../assets/home/ava2.jpg'
+import galleryImg1 from '../assets/gallery/WhatsApp-Image-2023-01-31-at-13.26.03-2.jpeg'
+import galleryImg2 from '../assets/gallery/WhatsApp-Image-2023-01-31-at-13.26.03-1.jpeg'
+import galleryImg3 from '../assets/gallery/WhatsApp-Image-2023-01-31-at-13.26.02.jpeg'
+import galleryImg4 from '../assets/gallery/Rahmat.com_46.jpg'
+import galleryImg5 from '../assets/gallery/Rahmat.com_43_2-e1675152948617.jpg'
+import galleryImg6 from '../assets/gallery/Rahmat.com_38_2.jpg'
+import galleryImg7 from '../assets/gallery/Rahmat.com_30_3.jpg'
+import galleryImg8 from '../assets/gallery/Rahmat.com_27_3.jpg'
+import blogCoverImage from '../assets/services/Picture2.jpg'
 
 export const brand = {
     name: 'RAHMAT ADVOCATE',
@@ -123,14 +132,14 @@ export const testimonials = [
 ]
 
 export const galleryImages = [
-    'https://rahmatadvocate.com/wp-content/uploads/2023/01/WhatsApp-Image-2023-01-31-at-13.26.03-2.jpeg',
-    'https://rahmatadvocate.com/wp-content/uploads/2023/01/WhatsApp-Image-2023-01-31-at-13.26.03-1.jpeg',
-    'https://rahmatadvocate.com/wp-content/uploads/2023/01/WhatsApp-Image-2023-01-31-at-13.26.02.jpeg',
-    'https://rahmatadvocate.com/wp-content/uploads/2023/01/Rahmat.com_46.jpg',
-    'https://rahmatadvocate.com/wp-content/uploads/2023/01/Rahmat.com_45.jpg',
-    'https://rahmatadvocate.com/wp-content/uploads/2023/01/WhatsApp-Image-2023-01-31-at-13.26.03.jpeg',
-    'https://rahmatadvocate.com/wp-content/uploads/2023/01/WhatsApp-Image-2023-01-31-at-13.26.04.jpeg',
-    'https://rahmatadvocate.com/wp-content/uploads/2023/01/WhatsApp-Image-2023-01-31-at-13.26.05.jpeg',
+    galleryImg1,
+    galleryImg2,
+    galleryImg3,
+    galleryImg4,
+    galleryImg5,
+    galleryImg6,
+    galleryImg7,
+    galleryImg8,
 ]
 
 export const blogPosts = [
@@ -139,6 +148,6 @@ export const blogPosts = [
         date: 'January 31, 2023',
         excerpt:
             'An NRI case blog focuses on legal cases involving Non-Resident Indians, including property disputes, inheritance, taxation, and family matters.',
-        image: 'https://rahmatadvocate.com/wp-content/uploads/2023/01/Picture2.jpg',
+        image: blogCoverImage,
     },
 ]
