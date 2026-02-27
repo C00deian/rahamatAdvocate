@@ -1,40 +1,26 @@
-import { useEffect, useState } from 'react'
-import { FaStar } from 'react-icons/fa'
+import { FaQuoteLeft, FaStar } from 'react-icons/fa'
 
 function TestimonialSlider({ testimonials }) {
-  const [current, setCurrent] = useState(0)
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % testimonials.length)
-    }, 4300)
-
-    return () => clearInterval(timer)
-  }, [testimonials.length])
-
   return (
-    <div className="grid gap-6 lg:grid-cols-3">
+    <div className="grid gap-7 md:grid-cols-2 lg:grid-cols-3">
       {testimonials.map((item, index) => {
-        const active = current === index
-
         return (
           <article
             key={item.name + index}
-            className={`border p-7 transition-all duration-500 ${
-              active
-                ? 'border-[var(--primary)] shadow-[0_12px_30px_rgba(0,0,0,.08)] -translate-y-1 bg-white'
-                : 'border-[var(--line)] bg-[#fffdfb]'
-            }`}
+            className="text-center"
           >
-            <p className="text-[1.02rem] leading-7 text-[#4f4f4f]">{item.quote}</p>
-            <div className="mt-4 flex gap-1 text-[var(--primary)]">
+            <div className="mx-auto size-12 rounded-full border-2 border-[var(--primary)] text-[var(--primary)] inline-flex items-center justify-center">
+              <FaQuoteLeft size={20} />
+            </div>
+            <p className="mx-auto mt-4 max-w-[23ch] text-[1.50rem] leading-8 text-[#202020] italic">{item.quote}</p>
+            <div className="mt-5 flex justify-center gap-1 text-[#f2ab39]">
               {[...Array(5)].map((_, starIndex) => (
-                <FaStar key={starIndex} size={13} />
+                <FaStar key={starIndex} size={18} />
               ))}
             </div>
-            <div className="mt-5 flex items-center gap-3">
-              <img src={item.avatar} alt={item.name} className="size-11 rounded-full object-cover" />
-              <h3 className="font-title font-medium text-[1rem]">{item.name}</h3>
+            <div className="mt-6 flex flex-col items-center">
+              <img src={item.avatar} alt={item.name} className="size-18 rounded-full object-cover" />
+              <h3 className="mt-5 font-title text-[0.85rem] font-semibold tracking-[0.09em] uppercase">{item.name}</h3>
             </div>
           </article>
         )

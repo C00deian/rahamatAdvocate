@@ -20,6 +20,9 @@ const iconMap = [FaSuitcase, FaBuilding, FaSkull]
 const iconMapping = [FaStar, FaUserCircle, FaTelegram]
 
 
+// image section
+
+
 function HomePage() {
     const [featuredPost] = blogPosts
 
@@ -180,19 +183,29 @@ function HomePage() {
 
             </section>
 
-            <section className="py-[4.5rem] md:py-[6rem] bg-[#f8f6f3]">
-                <div className="container-shell">
-                    <AnimatedSection>
-                        <SectionHeading
-                            centered
-                            title="What Clients Say"
-                            description="Real feedback from clients who trusted us with critical legal matters."
-                        />
+            <section className="relative overflow-hidden py-[5rem] md:py-[6.5rem]">
+                <div
+                    className="absolute inset-0 bg-cover bg-center"
+                    style={{ backgroundImage: 'url(https://rahmatadvocate.com/wp-content/uploads/2023/01/1.jpg)' }}
+                />
+                <div className="absolute inset-0 bg-black/68"/>
+
+                <div className="container-shell relative z-10">
+                    <AnimatedSection className="mx-auto max-w-3xl text-center text-white">
+                        <h2 className="font-title text-[2.05rem] md:text-[2.65rem] font-semibold">What Clients Say</h2>
+                        <p className="mt-3 text-md md:text-[0.98rem] text-white">
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                        </p>
+                        <p className='text-[1rem] md:text-[0.98rem] text-white'>
+                            blanditiis praesentium voluptatum deleniti atque corrupti </p>
                     </AnimatedSection>
 
-                    <div className="mt-10">
+                    <AnimatedSection
+                        className="mx-auto mt-10 max-w-210 bg-white px-6 py-8 md:px-12 md:py-13 lg:px-15 shadow-[0_12px_35px_rgba(0,0,0,.18)]"
+                        delay={120}
+                    >
                         <TestimonialSlider testimonials={testimonials}/>
-                    </div>
+                    </AnimatedSection>
                 </div>
             </section>
 
@@ -206,56 +219,18 @@ function HomePage() {
                                      delay={120}>
                         <article className="grid md:grid-cols-[220px_1fr] gap-6 items-center">
                             <img src={featuredPost.image} alt={featuredPost.title}
-                                 className="w-full h-[10.5rem] md:h-full object-cover"/>
+                                 className="w-full h-42 md:h-full object-cover"/>
                             <div>
                                 <h3 className="font-title text-2xl">{featuredPost.title}</h3>
                                 <p className="text-sm mt-1 text-[#777]">{featuredPost.date}</p>
                                 <p className="mt-4 text-[#535353] leading-7">{featuredPost.excerpt}</p>
                                 <Link to="/our-blog"
-                                      className="inline-flex mt-5 items-center gap-2 text-[var(--primary)] font-title">
+                                      className="inline-flex items-center gap-2 bg-(--primary) text-white px-6 py-3 font-title hover:bg-(--primary-dark) transition-colors mt-4"
+                                >
                                     view all
                                 </Link>
                             </div>
                         </article>
-                    </AnimatedSection>
-                </div>
-            </section>
-
-            <section className="py-12 bg-[var(--primary)] text-white">
-                <div className="container-shell flex flex-col md:flex-row items-center justify-between gap-5">
-                    <h3 className="font-title text-2xl md:text-3xl">For more Details</h3>
-                    <div className="flex flex-wrap gap-3">
-                        <Link to="/contact-us"
-                              className="border border-white/70 px-6 py-3 font-title hover:bg-white/15 transition-colors">
-                            Contact Us
-                        </Link>
-                        <a href="tel:+919642066661"
-                           className="bg-white text-[var(--primary)] px-6 py-3 font-title hover:bg-[#f2ece7] transition-colors">
-                            Call Now
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <section className="py-16 bg-[#111] text-white">
-                <div className="container-shell grid md:grid-cols-3 gap-6">
-                    <AnimatedSection className="border border-white/20 p-6">
-                        <FaGlobeAsia size={24} className="text-[var(--primary)]"/>
-                        <h4 className="font-title mt-4 text-xl">Globally NRI’s</h4>
-                        <p className="mt-2 text-white/75 leading-7">Legal help for local-to-global NRI court, police,
-                            family and property matters in India.</p>
-                    </AnimatedSection>
-                    <AnimatedSection className="border border-white/20 p-6" delay={120}>
-                        <FaUserShield size={24} className="text-[var(--primary)]"/>
-                        <h4 className="font-title mt-4 text-xl">Professional Lawyers</h4>
-                        <p className="mt-2 text-white/75 leading-7">A focused legal team offering strategic guidance,
-                            litigation and advisory services.</p>
-                    </AnimatedSection>
-                    <AnimatedSection className="border border-white/20 p-6" delay={220}>
-                        <FaBalanceScale size={24} className="text-[var(--primary)]"/>
-                        <h4 className="font-title mt-4 text-xl">#1 Law Firm 2019</h4>
-                        <p className="mt-2 text-white/75 leading-7">Recognized by clients for trust, responsiveness and
-                            high success in legal representation.</p>
                     </AnimatedSection>
                 </div>
             </section>
