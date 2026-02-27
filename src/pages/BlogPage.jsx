@@ -42,7 +42,7 @@ function BlogPage() {
             {posts.map((post, index) => (
               <AnimatedSection key={post.title} delay={index * 80}>
                 <article className="h-full border border-[var(--line)] bg-[#fdfbf8] overflow-hidden">
-                  <img src={post.image} alt={post.title} className="w-full h-56 object-cover" />
+                  <img src={post.image} alt={post.title} className="w-full bject-cover" />
                   <div className="p-6">
                     <h3 className="font-title text-2xl leading-8">{post.title}</h3>
                     <p className="mt-2 text-sm text-[#787878]">{post.date}</p>

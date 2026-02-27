@@ -1,17 +1,16 @@
 import { Link } from 'react-router-dom'
-import { FaLongArrowAltRight, FaUserCircle } from 'react-icons/fa'
+import {FaLongArrowAltRight, FaPhoneAlt, FaUserCircle} from 'react-icons/fa'
 import AnimatedSection from '../components/AnimatedSection'
 import CounterCard from '../components/CounterCard'
 import PageHero from '../components/PageHero'
 import SectionHeading from '../components/SectionHeading'
 import aboutMainImage from '../assets/about/af-2048x1365.png'
-
 import aboutExpertiseImage from '../assets/about/10.jpg'
 import aboutOverlayImage from '../assets/about/12.jpg'
-import aboutVisionBgImage from '../assets/gallery/Rahmat.com_46.jpg'
+import aboutVisionBgImage from '../assets/about/2.jpg'
 import aboutGalleryOne from '../assets/about/WhatsApp-Image-2023-01-31-at-13.26.04.jpeg'
-import aboutGalleryTwo from '../assets/gallery/WhatsApp-Image-2023-01-31-at-13.26.02.jpeg'
-import aboutGalleryThree from '../assets/gallery/WhatsApp-Image-2023-01-31-at-13.26.03-1.jpeg'
+import aboutGalleryTwo from '../assets/about/stopvoilence.jpeg'
+import aboutGalleryThree from '../assets/about/stopV1.jpeg'
 
 const progressItems = [
   { label: 'Corporate Cases', score: 90 },
@@ -94,7 +93,7 @@ function AboutPage() {
               className="h-full min-h-[260px] border border-[#dfd3c5] relative overflow-hidden"
               style={{
                 backgroundImage:
-                  `linear-gradient(rgba(17,17,17,.45), rgba(17,17,17,.45)), url(${aboutOverlayImage})`,
+                  `linear-gradient(rgba(17,17,17,.45), rgba(17,17,17,.45)), url(${aboutVisionBgImage})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
               }}
@@ -118,45 +117,43 @@ function AboutPage() {
       </section>
 
       <section
-        className="py-18 md:py-24 text-white"
+        className="py-18 md:py-40 text-white"
         style={{
           backgroundImage:
-            `linear-gradient(rgba(15,15,15,.72), rgba(15,15,15,.72)), url(${aboutVisionBgImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
+            ` url(${aboutOverlayImage})`,
+          backgroundPosition: 'top center',
+          backgroundSize: 'cover'
         }}
       >
         <div className="container-shell grid lg:grid-cols-2 gap-10 items-center">
           <AnimatedSection>
-            <SectionHeading eyebrow="Our Vision" title="Exceptional Legal Services With Integrity" />
-            <p className="mt-5 text-white/90 leading-8 text-[1.06rem]">
-              Our vision is to provide exceptional legal services by delivering expert advice, personalized attention,
-              and tailored solutions that meet each client&apos;s needs. We strive to build long-lasting relationships
-              based on trust and commitment to successful outcomes.
+            <SectionHeading title="Our Vision" />
+            <p className="mt-5 text-white/90 leading-7 text-[1.08rem]">
+              Our vision is to provide exceptional legal services to our clients by delivering expert advice, personalized attention, and tailored solutions that meet their specific needs. We strive to build long-lasting relationships based on trust, integrity, and a commitment to excellence, with a focus on achieving successful outcomes and protecting the rights of our clients.
             </p>
             <a
               href="tel:+919642066661"
-              className="inline-flex mt-7 items-center gap-2 border border-white/60 px-6 py-3 font-title hover:bg-white/15 transition-colors"
+              className="inline-flex mt-6 items-center gap-2 px-6 py-3 font-title bg-(--primary) hover:bg-taupe-950 transition-colors"
             >
-              <FaLongArrowAltRight />
+              <FaPhoneAlt />
               contact us
             </a>
           </AnimatedSection>
         </div>
       </section>
 
-      <section className="py-12 bg-white">
-        <div className="container-shell flex justify-center">
+      <section className="py-10 bg-white">
+        <div className="container-shell flex justify-start text-white">
           <Link
             to="/contact-us"
-            className="inline-flex items-center border border-[var(--primary)] text-[var(--primary)] px-7 py-3 font-title hover:bg-[var(--primary)] hover:text-white transition-colors"
+            className="inline-flex mt-6 items-center gap-2 px-6 py-3 font-title bg-(--primary) hover:bg-taupe-950 transition-colors"
           >
             Faq
           </Link>
         </div>
       </section>
 
-      <section className="pb-18 md:pb-24 bg-white">
+      <section className="pb-18 md:pb-24 bg-white mb-35">
         <div className="container-shell grid md:grid-cols-3 gap-5">
           {[
             aboutGalleryOne,
@@ -164,7 +161,9 @@ function AboutPage() {
             aboutGalleryThree,
           ].map((image, index) => (
             <AnimatedSection key={image} delay={index * 90}>
-              <img src={image} alt="About gallery" className="w-full h-[360px] md:h-[430px] object-cover" />
+              <div className='h-90 md:h-107.5'>
+                <img src={image} alt="About gallery" className="w-full  object-cover" />
+              </div>
             </AnimatedSection>
           ))}
         </div>
