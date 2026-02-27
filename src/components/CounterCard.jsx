@@ -48,12 +48,12 @@ function CounterCard({ value, label, suffix = '' }) {
   }, [duration, started, value])
 
   return (
-    <article ref={ref} className="bg-white text-center border border-[var(--line)] p-7 md:p-9">
+    <article ref={ref} className="bg-white text-center border border-[var(--line)] p-7 md:p-9  uppercase text-black font-semibold text-5xl">
       <p className="font-title text-4xl md:text-5xl font-bold text-[var(--primary)]">
         {display}
         {suffix}
       </p>
-      <p className="mt-3 text-[1rem] text-[#4e4e4e]">{label}</p>
+      <p className="mt-3 text-[1.2rem] text-[#4e4e4e]">{label}</p>
     </article>
   )
 }

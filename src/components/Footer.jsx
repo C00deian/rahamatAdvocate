@@ -20,9 +20,10 @@ function Footer() {
         <section>
           <h3 className="font-title text-lg">Contact</h3>
           <ul className="mt-3 space-y-2.5 text-white/80">
-            <li className="flex items-center gap-2"><FaPhoneAlt size={12} /> +91 96420 66661</li>
-            <li className="flex items-center gap-2"><FaEnvelope size={12} /> contact@rahmatadvocate.com</li>
-            <li>Mehdipatnam, Hyderabad, India</li>
+            <li className="flex items-center gap-2"><FaPhoneAlt size={12} />+91 9642066661</li>
+            <li className="flex items-center gap-2"><FaEnvelope size={12} /> advocatesrahmat@gmail.com</li>
+            <li>1st Floor, above My Home Super Market & Country Dairy, Near
+              AMBA Theatre, MEHDIPATNAM, Hyderabad – 500028. Telangana State.</li>
           </ul>
         </section>
 

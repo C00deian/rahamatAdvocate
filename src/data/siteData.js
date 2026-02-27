@@ -1,6 +1,9 @@
 import heroSlideOne from '../assets/home/2.jpg'
 import heroSlideTwo from '../assets/home/3.jpg'
 import heroSlideThree from '../assets/home/4.jpg'
+import clientAvatarOne from '../assets/home/avtar3.png'
+import clientAvatarTwo from '../assets/home/ava1.jpg'
+import clientAvatarThree from '../assets/home/ava2.jpg'
 
 export const brand = {
     name: 'RAHMAT ADVOCATE',
@@ -62,15 +65,15 @@ export const heroSlides = [
 export const practiceItems = [
     {
         title: 'Corporate & Securities',
-        body: 'Legal framework around company formation, governance, securities, compliance, and business transactions.',
+        body: 'Corporate and securities law refers to the legal framework that governs the formation, operation, and regulation of corporations and securities. It includes the laws, regulations, and rules related to the issuance and sale of securities, such as stocks, bonds, and other financial instruments.',
     },
     {
         title: 'Real Estate Law',
-        body: 'Property disputes, title matters, transactions, documentation, and civil proceedings related to land and buildings.',
+        body: 'Real estate law is a branch of law that deals with the rights and interests in real property. Real property refers to land and any structures attached to it, including buildings, homes, and other improvements.',
     },
     {
         title: 'Criminal Law',
-        body: 'Criminal defense, anticipatory bail, trial strategy, white collar matters, and rights protection across proceedings.',
+        body: 'Criminal law is a branch of law that defines and regulates criminal offenses and their penalties. It is a system of laws and regulations designed to prevent and punish behavior that is harmful to individuals, society, or the state.',
     },
 ]
 export const MoreAboutLayer = [
@@ -93,7 +96,7 @@ export const counters = [
     {label: 'Happy Clients', value: 935, suffix: '+'},
     {label: 'Successful Rates', value: 96, suffix: '%'},
     {label: 'Domestic Locations', value: 78, suffix: '+'},
-    {label: 'Cases Closed', value: 1200, suffix: '+'},
+    {label: 'Cases Closed', value: 5062, suffix: '+'},
 ]
 
 export const testimonials = [
@@ -103,19 +106,19 @@ export const testimonials = [
             'MRS KAUSAR *Muslim Hijaabi Women Advocate spl in International &amp; Muslim Law.\n' +
             'There best Legal services for Local to Globally NRI\'s in Cyber Crime, Divorce, Corporate law, Family Law &amp; Property Laws.',
         name: 'ISHRAD AYAN',
-        avatar: 'https://rahmatadvocate.com/wp-content/uploads/2023/01/unnamed.png',
+        avatar: clientAvatarOne,
     },
     {
         quote:
             'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae.',
         name: 'CHANDLER BING',
-        avatar: 'https://rahmatadvocate.com/wp-content/uploads/2023/01/unnamed.png',
+        avatar: clientAvatarTwo,
     },
     {
         quote:
             'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae.',
         name: 'PHOEBE BUFFAY',
-        avatar: 'https://rahmatadvocate.com/wp-content/uploads/2023/01/unnamed.png',
+        avatar: clientAvatarThree,
     },
 ]
 

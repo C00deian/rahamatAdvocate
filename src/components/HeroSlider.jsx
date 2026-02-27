@@ -44,7 +44,7 @@ function HeroSlider({ slides }) {
   }
 
   return (
-    <section className="relative h-screen min-h-[520px] overflow-hidden bg-black">
+    <section className="relative h-screen min-h-130 overflow-hidden bg-black">
       {slides.map((slide, index) => {
         const active = index === current
         const fallbackLayout = defaultLayoutByAlign[slide.align] || defaultLayoutByAlign.center
@@ -56,13 +56,14 @@ function HeroSlider({ slides }) {
         return (
           <div
             key={slide.title}
-            className={`absolute inset-0 ${active ? 'hero-fade-active z-10' : 'hero-fade-enter z-0'} transition-all duration-700`}
+            className={`absolute inset-0 ${active ? 'hero-fade-active z-10' : 'hero-fade-enter z-0'} transition-all duration-800`}
             style={{
               backgroundImage: `${overlayGradient}, url(${slide.image})`,
               backgroundSize: 'cover',
               backgroundPosition: slide.backgroundPosition || 'center',
             }}
           >
+
             <div className={`container-shell relative z-10 h-full px-4 sm:px-8 md:px-16 lg:px-24 flex items-center ${containerClass}`}>
               <div className={`text-white ${contentClass}`}>
                 <h1 className={`font-title text-[2.1rem] md:text-[45px] font-bold leading-[1.2] ${slide.titleClass || ''}`}>{slide.title}</h1>

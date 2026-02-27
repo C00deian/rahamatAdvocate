@@ -186,7 +186,7 @@ function ServicesPage() {
                         <img
                             src="https://rahmatadvocate.com/wp-content/uploads/2019/11/13-1024x681.jpg"
                             alt="Office"
-                            className="w-full h-[320px] md:h-full object-cover"
+                            className="w-full h-80 md:h-full object-cover"
                         />
                     </AnimatedSection>
                 </div>

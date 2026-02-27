@@ -22,6 +22,7 @@ const iconMapping = [FaStar, FaUserCircle, FaTelegram]
 
 // image section
 import rahmat_45 from '../assets/home/Rahmat.com_45.jpg'
+import clientSayBg from '../assets/home/7.jpg'
 
 
 function HomePage() {
@@ -29,48 +30,41 @@ function HomePage() {
 
     return (
         <>
-            <HeroSlider slides={heroSlides}/>
-            <section className="relative z-20 -mt-10 md:-mt-28 pb-[4.5rem] md:pb-[6rem] bg-transparent">
+            <AnimatedSection>
+                <HeroSlider slides={heroSlides}/>
+            </AnimatedSection>
+
+            <section className="relative z-20 -mt-10 md:-mt-22 pb-16 md:pb-22 bg-transparent">
                 <div className="container-shell grid lg:grid-cols-2 gap-0 items-center">
-                    <AnimatedSection className="bg-[#f5f5f5] p-8 md:p-14">
+                    <AnimatedSection className="bg-white shadow p-8 md:p-14">
                         <p className="section-subtitle">Since 2010 Legal Services provider and Legal Adviser</p>
                         <h2 className="section-title">About The Firm</h2>
                         <p className="mt-6 text-[1.06rem] leading-8 text-[#555]">
-                            Mr. RAHMAT Advocates & Associates has been practicing and handling cases independently and
-                            with a Team of
-                            Advocates and Senior Advocates with a result-oriented approach, both professionally and
-                            ethically.
-                        </p>
-                        <p className="mt-4 text-[1.06rem] leading-8 text-[#555]">
-                            Practice areas include Cyber Crimes & I.T. Laws, Corporate Laws, Criminal Law, Bail Matters,
-                            Civil Law,
-                            Real Estate Laws, Family Law, Domestic Violence, Child Custody, Muslim Law and Legal
-                            Services for NRI's in India.
+                            Mr. RAHMAT Advocates & Associates has been practicing and handling cases independently and with a Team of Advocates, Associates and with Senior Advocates with a result-oriented approach, both professionally and ethically and has now acquired many years of Professional experience in Cyber Crimes & I.T. Laws, Corporate Laws, International laws, Criminal Law, Bail Matters, Civil Law, Real Estate Laws, Family laws, Domestic Violence & Maintenance and Divorce Laws, Child Custody, MUSLIM Law and Legal Services for NRI's in India [for Disputesrelated to Properties, Family, Dissolution of Marriage & Legal Separation], Banking Laws - [Cheque Bounce & N.I.138 Act & Recovery], Cyber Frauds, Online Fraud, Intellectual Property Laws [Rights & Trade mark, Patent and Copyrights], Etc.
                         </p>
                         <p className="mt-5 font-title font-medium">Mr. SYED RAHMAT | B.Com, LLB, LLM, (MBA)</p>
+                        <p className=" font-title font-medium">Masters in Corporate Law.</p>
+
                     </AnimatedSection>
 
                     <AnimatedSection className="relative lg:pl-9" delay={140}>
-                        <img
-                            src={rahmat_45}
-                            alt="Advocate Rahmat"
-                            className="w-full h-[430px] md:h-135 object-cover shadow-[0_0_40px_rgba(0,0,0,.25)]"
-                        />
-                        <div
-                            className="absolute -bottom-5 -left-5 md:-left-2 bg-[var(--primary)] text-white p-5 max-w-[15rem]">
-                            <p className="font-title text-3xl font-bold">16+</p>
-                            <p className="mt-1 text-sm">Years of Professional Legal Experience</p>
+                        <div className='h-107.5 md:h-135 -mt-10 md:-mt-24'>
+                            <img
+                                src={rahmat_45}
+                                alt="Advocate Rahmat"
+                                className="w-full object-cover shadow-[0_0_40px_rgba(0,0,0,.25)]"
+                            />
                         </div>
+
                     </AnimatedSection>
                 </div>
             </section>
 
-            <section className="py-18 md:py-24 bg-(--surface)">
+            <section className="py-18 md:py-24">
                 <div className="container-shell">
                     <AnimatedSection>
                         <SectionHeading
                             centered
-                            eyebrow="Field Of Practice"
                             title="Field Of Practice"
                             description="CYBER LAW & I.T. LAWS, CORPORATE LAW, START-UPS, COMPANY LAW, EMPLOYMENT & SERVICE LAWS, CRIMIAL LAW, BANKING LAW, CIVIL LAW, INTELLECTUAL PROPERTY RIGHT LAW, COPYRIGHT, TRADEMARKS, PATENTS, BAIL, ANTICIPATORY BAIL, WHITE COLLAR & ECONOMICS OFFENCES, CHEATING, MONEY LAUNDERING, NBW, POCSO, CHILD ABUSE, HARASSMENT, ASSAULT, RAPE, MURDER, BANKING & INSOLVENCY, N.I.138 ACT, BUSINESS & RECOVERY LAWS, NBFC, SARFAESI & DRT Cases."
                         />
@@ -83,13 +77,13 @@ function HomePage() {
                                 <AnimatedSection key={item.title} delay={index * 120}>
                                     <article
                                         className="h-full border border-(--line) bg-white p-8 text-center hover:shadow-[0_10px_24px_rgba(0,0,0,.08)] transition-shadow flex flex-col items-center">
-                                        <div className="size-12 text-(--primary) flex items-center justify-center">
-                                            <Icon size={40}/>
+                                        <div className="size-16 text-(--primary) flex items-center justify-center">
+                                            <Icon size={45}/>
                                         </div>
 
                                         <h3 className="font-title mt-5 text-xl font-semibold">{item.title}</h3>
 
-                                        <p className="mt-3 text-[#545454] leading-6 max-w-[42ch]">
+                                        <p className="mt-3 text-[#545454] leading-6 max-w-[42ch] text-lg">
                                             {item.body}
                                         </p>
                                     </article>
@@ -187,14 +181,14 @@ function HomePage() {
             <section className="relative overflow-hidden py-[5rem] md:py-[6.5rem]">
                 <div
                     className="absolute inset-0 bg-cover bg-center"
-                    style={{ backgroundImage: 'url(https://rahmatadvocate.com/wp-content/uploads/2023/01/1.jpg)' }}
+                    style={{ backgroundImage: `url(${clientSayBg})` }}
                 />
                 <div className="absolute inset-0 bg-black/68"/>
 
                 <div className="container-shell relative z-10">
                     <AnimatedSection className="mx-auto max-w-3xl text-center text-white">
                         <h2 className="font-title text-[2.05rem] md:text-[2.65rem] font-semibold">What Clients Say</h2>
-                        <p className="mt-3 text-md md:text-[0.98rem] text-white">
+                        <p className="mt-3 text-md md:text-[0.1rem] text-white">
                             At vero eos et accusamus et iusto odio dignissimos ducimus qui
                         </p>
                         <p className='text-[1rem] md:text-[0.98rem] text-white'>
@@ -210,13 +204,13 @@ function HomePage() {
                 </div>
             </section>
 
-            <section className="py-[4.5rem] md:py-[6rem] bg-white">
+            <section className="py-18 md:py-24 bg-white">
                 <div className="container-shell">
                     <AnimatedSection>
                         <SectionHeading centered title="Latest From Blog"/>
                     </AnimatedSection>
 
-                    <AnimatedSection className="max-w-4xl mx-auto mt-10 border border-[var(--line)] p-6 md:p-8"
+                    <AnimatedSection className="max-w-4xl mx-auto mt-10 border border-(--line) p-6 md:p-8"
                                      delay={120}>
                         <article className="grid md:grid-cols-[220px_1fr] gap-6 items-center">
                             <img src={featuredPost.image} alt={featuredPost.title}
