@@ -1,0 +1,26 @@
+import { Navigate, Route, Routes } from 'react-router-dom'
+import Layout from './components/Layout'
+import HomePage from './pages/HomePage'
+import ServicesPage from './pages/ServicesPage'
+import ContactPage from './pages/ContactPage'
+import AboutPage from './pages/AboutPage'
+import BlogPage from './pages/BlogPage'
+import GalleryPage from './pages/GalleryPage'
+
+function App() {
+  return (
+    <Layout>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/services" element={<ServicesPage />} />
+        <Route path="/contact-us" element={<ContactPage />} />
+        <Route path="/about-us" element={<AboutPage />} />
+        <Route path="/our-blog" element={<BlogPage />} />
+        <Route path="/gallery" element={<GalleryPage />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+    </Layout>
+  )
+}
+
+export default App
